@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47b681d1-f3d5-440c-b33b-9a28d23e195a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opencv_test.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/opencv_test.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +72,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="738" y="261" key="FileChooserDialogImpl" timestamp="1598750252246">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="738" y="261" key="FileChooserDialogImpl/217.1080.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1598750252246" />
     <state width="1343" height="170" key="GridCell.Tab.0.bottom" timestamp="1596932430863">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -87,9 +92,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1343" height="170" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1596932430863" />
-    <state x="183" y="8" key="SettingsEditor" timestamp="1596753234466">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="257" y="11" key="SettingsEditor" timestamp="1598137959535">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="183" y="8" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1596753234466" />
+    <state x="257" y="11" key="SettingsEditor/217.1080.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1598137959535" />
   </component>
 </project>

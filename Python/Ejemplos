@@ -1,0 +1,79 @@
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Toma input de la camara, la pasa a gris, escribe algo y lo muestra, salis de la pantalla con ESC.
+import cv2
+
+capture = cv2.VideoCapture(0) #Tomo como device de captura la camara web
+
+while (True):
+
+    ret, frame = capture.read() #Leo un frame (de esta manera lea tan rapido como pueda no respeta fps)
+    frame_h, frame_w = frame.shape[0], frame.shape[1] #IMPORTANTE: el frame es una matriz de shape (y, x, cdad canales)
+    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)  #Cambio el frame a grayscale
+    gray = cv2.putText(gray, 'Hola', (int(frame_h / 2)-100, int(frame_w / 2)), cv2.FONT_HERSHEY_COMPLEX, 1,
+                      255)  # Pongo algun texto
+
+    cv2.imshow('gris', gray) #Muestro imagen en escala de grises
+    cv2.imshow('original', frame) #Muestro imagen original
+
+
+    if cv2.waitKey(1) == 27: #Espero la tecla para salir
+        break
+
+capture.release()
+cv2.destroyAllWindows()
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Manejo de eventos con opencv
+import cv2
+events = [i for i in dir(cv2) if 'EVENT' in i]
+print(events)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Crea una pantalla donde podes dibujar un caracter
+import numpy as np
+import cv2
+import matplotlib.pyplot as plt
+
+drawing = False
+prevx, prevy = None,None
+
+def draw_circle(event,x,y,flags,param):                 #FUNCION CALLBACK DE MANEJO DE EVENTOS DE MOUSE
+    global drawing #Me dice si tengo el mouse apretado
+    global prevx #Posicion x anterior
+    global prevy #posicion y anterior
+    img = param
+    if event == cv2.EVENT_LBUTTONDOWN:         #Cuando apreto el mouse, dibujo un circulo en el lugar
+        drawing = True                         #y guardo la posicion
+        img = cv2.circle(img,(x,y),2,(255,255,255), -1)
+        prevx, prevy = x, y
+    elif event == cv2.EVENT_MOUSEMOVE:         #Cuando muevo el mouse, me fijo si el mouse sigue apretado
+        if drawing == True:                    #Si lo esta, dibujo una linea desde la posiciona anterior a la actual
+            img = cv2.line(img,(prevx, prevy),(x,y),(255, 255, 255), 2)
+            prevx, prevy = x, y
+    elif event == cv2.EVENT_LBUTTONUP:        #Cuando suelto el boton dibujo una ultima linea
+        drawing = False
+        img = cv2.line(img,(prevx, prevy),(x,y),(255, 255, 255), 2)
+        prevx, prevy = None,None
+
+img = np.zeros((100,100), np.uint8)  #Creo una imagen negra
+cv2.namedWindow('Canvas')             #La llamo canvas
+cv2.setMouseCallback('Canvas',draw_circle, img)  #Seteo los callbacks para el mouse
+while True:
+    cv2.imshow('Canvas',img)
+    if cv2.waitKey(20) & 0xFF == 27:
+        break
+plt.show()
+cv2.destroyAllWindows()
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Load y save de imagenes en la computadora
+from tkinter import *
+from tkinter import filedialog
+import cv2
+
+Tk().withdraw()  #Cierro la ventana que me crea tkinter y solo molesta
+filepath = filedialog.askopenfilename(filetypes=[("Image files","*.png"), ("Image files","*.jpg")]) #Pido imagen
+img = cv2.imread(filepath, cv2.IMREAD_GRAYSCALE) #Cargo con el filepath la imagen
+while True:
+    cv2.imshow('Loaded image',img)  #Muestro imagen
+    if cv2.waitKey(20) & 0xFF == 27:
+        break
+cv2.imwrite("{0}_{2}.{1}".format(*filepath.rsplit('.', 1) + ['_gray']), img) #Guardo imagen como nombre_gray
+cv2.destroyAllWindows()
