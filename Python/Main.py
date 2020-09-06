@@ -37,19 +37,28 @@ while True:
     if cv2.waitKey(20) & 0xFF == ord('q'):
         break
     elif cv2.waitKey(20) & 0xFF == ord('c'):
-
-        boxes = tess.image_to_boxes(img, lang="equ")
+        img = cv2.medianBlur(img, 3)
+        chars_img = []
+        chars_txt = []
+        temp = []
+        boxes = tess.image_to_boxes(img, lang="eng+equ")
         h, w, _ = img.shape
         if boxes:
             for b in boxes.splitlines():
                 b = b.split(' ')
+                temp = np.copy(img[h-(int(b[4])):h-(int(b[2])), int(b[1]):int(b[3])])
+                chars_img.append(temp)
+                chars_txt.append(b[0])
                 img = cv2.rectangle(img, (int(b[1]), h - int(b[2])), (int(b[3]), h - int(b[4])), (0, 255, 0), 2)
-                print(b[0])
+            print(chars_txt)
         else:
             print("nothing found")
-            break
         while True:
             cv2.imshow('Canvas', img)
+            i=0
+            for char in chars_img:
+                i = i+1
+                cv2.imshow("Character" + str(i), char)
             if cv2.waitKey(20) & 0xFF == ord('q'):
                 break
         break
@@ -58,5 +67,6 @@ while True:
     #    img = cv2.resize(img, (50, 50))
     #    FileHandling.saveImage(img)
     #    break
+
 plt.show()
 cv2.destroyAllWindows()
