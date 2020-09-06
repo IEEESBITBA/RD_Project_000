@@ -1,0 +1,39 @@
+\input{Header.tex}
+
+\usepackage[procnames]{listings}
+\begin{document}
+
+\title{Título del artículo}
+\author{Autor1, Autor2\\
+\small{Instituto Tecnológico de Buenos Aires, Argentina}}
+
+\twocolumn[
+  \begin{@twocolumnfalse}
+    \maketitle
+    \begin{abstract}
+		\input{secciones/abstracto.tex}
+	\end{abstract}
+  \end{@twocolumnfalse}
+  ]
+
+\section{Introducción}
+\input{secciones/introduccion.tex}
+	
+\section{Investigación}
+\input{secciones/investigacion.tex}
+
+\section{Aportes y Desarrollo}
+\input{secciones/aportes.tex}
+
+\section{Conclusiones}
+\input{secciones/conclusion.tex}
+
+\begin{thebibliography}{9}
+
+\bibitem{ref:intro1}
+P. P. Fulano, P. P. Fulano y P. P. Fulano. \textit{Nombre del maravilloso paper}. Journal, 2da ed, 2002.
+
+
+\end{thebibliography}
+
+\end{document}
