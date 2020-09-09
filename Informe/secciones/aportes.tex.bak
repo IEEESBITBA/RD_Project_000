@@ -1,9 +1,9 @@
 \begin{normalsize}
 \color{red}
-NOTAS:\\
+Notas de pruebas:\\
+\end{normalsize}
 \begin{itemize}
 \item Se utilizó OpenCV para realizar una pequeña aplicación donde se pueda escribir, y guardar lo escrito
 \item Luego se utilizó Pytesseract con los módulos de inglés y ecuaciones matemáticas para reconocer lo escrito. Sin embargo, esto no funcionaba correctamente.
 \item Se intentó utilizar la función de pytesseract para recibir las bounding boxes y se notó que la mayoria de las veces eran devueltas de manera correcta, exceptuando ecuaciones complicadas con notación integral o diferencial.
 \end{itemize}
-\end{normalsize}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.8.12)  6 SEP 2020 19:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.8.12)  9 SEP 2020 17:28
 entering extended mode
 **./Informe.tex
 (Informe.tex
@@ -1137,11 +1137,16 @@ LaTeX Info: Redefining \nameref on input line 4.
 \c@lstlisting=\count183
  (secciones/abstracto.tex)
 (secciones/introduccion.tex) (secciones/investigacion.tex)
-(secciones/aportes.tex) [1{C:/Users/Acer/AppData/Local/MiKTeX/2.9/pdftex/config
-/pdftex.map}
+(secciones/aportes.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--5
+
+ []
+
+) (secciones/conclusion.tex [1{C:/Users/Acer/AppData/Local/MiKTeX/2.9/pdftex/co
+nfig/pdftex.map}
 
 
-] (secciones/conclusion.tex) [2
+]) [2
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 39.
@@ -1157,10 +1162,10 @@ Package rerunfilecheck Info: File `Informe.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 39.
  ) 
 Here is how much of TeX's memory you used:
- 31132 strings out of 492895
- 693294 string characters out of 3124202
- 901631 words of memory out of 3000000
- 34612 multiletter control sequences out of 15000+200000
+ 31136 strings out of 492895
+ 693678 string characters out of 3124202
+ 902631 words of memory out of 3000000
+ 34616 multiletter control sequences out of 15000+200000
  33018 words of font info for 62 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,12n,68p,1091b,361s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1169,7 +1174,7 @@ Here is how much of TeX's memory you used:
 fb><C:/Users/Acer/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8
 a.pfb><C:/Users/Acer/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/ut
 mri8a.pfb>
-Output written on Informe.pdf (2 pages, 43374 bytes).
+Output written on Informe.pdf (2 pages, 43452 bytes).
 PDF statistics:
  55 PDF objects out of 1000 (max. 8388607)
  9 named destinations out of 1000 (max. 500000)
