@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.8.12)  9 SEP 2020 17:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.8.12)  17 OCT 2020 13:50
 entering extended mode
 **./Informe.tex
 (Informe.tex
@@ -1021,8 +1021,8 @@ File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
  (Informe.aux
-LaTeX Info: Redefining \. on input line 19.
-LaTeX Info: Redefining \% on input line 19.
+LaTeX Info: Redefining \. on input line 20.
+LaTeX Info: Redefining \% on input line 20.
 )
 \openout1 = `Informe.aux'.
 
@@ -1136,47 +1136,45 @@ LaTeX Info: Redefining \nameref on input line 4.
 
 \c@lstlisting=\count183
  (secciones/abstracto.tex)
-(secciones/introduccion.tex) (secciones/investigacion.tex)
-(secciones/aportes.tex
+(secciones/introduccion.tex) (secciones/aportes.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--5
 
  []
 
-) (secciones/conclusion.tex [1{C:/Users/Acer/AppData/Local/MiKTeX/2.9/pdftex/co
-nfig/pdftex.map}
+) [1{C:/Users/Acer/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
-]) [2
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 39.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 39.
- (Informe.aux
-LaTeX Info: Redefining \. on input line 19.
-LaTeX Info: Redefining \% on input line 19.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 34.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 34.
+
+(Informe.aux
+LaTeX Info: Redefining \. on input line 20.
+LaTeX Info: Redefining \% on input line 20.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 39.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 39.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 34.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 34.
 Package rerunfilecheck Info: File `Informe.out' has not changed.
-(rerunfilecheck)             Checksum: 3C13D379B9C7F45A215472080A59A123;255.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 39.
+(rerunfilecheck)             Checksum: 6226E7A5FBCE47A45AB63D6596DD88A8;145.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 34.
  ) 
 Here is how much of TeX's memory you used:
- 31136 strings out of 492895
- 693678 string characters out of 3124202
- 902631 words of memory out of 3000000
- 34616 multiletter control sequences out of 15000+200000
+ 31124 strings out of 492895
+ 693394 string characters out of 3124202
+ 899631 words of memory out of 3000000
+ 34613 multiletter control sequences out of 15000+200000
  33018 words of font info for 62 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,12n,68p,1091b,361s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 57i,6n,68p,1090b,361s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Acer/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}
 <C:/Users/Acer/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.p
 fb><C:/Users/Acer/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8
 a.pfb><C:/Users/Acer/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/ut
 mri8a.pfb>
-Output written on Informe.pdf (2 pages, 43452 bytes).
+Output written on Informe.pdf (1 page, 41207 bytes).
 PDF statistics:
- 55 PDF objects out of 1000 (max. 8388607)
- 9 named destinations out of 1000 (max. 500000)
- 53 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 PDF objects out of 1000 (max. 8388607)
+ 6 named destinations out of 1000 (max. 500000)
+ 37 words of extra memory for PDF output out of 10000 (max. 10000000)
 
